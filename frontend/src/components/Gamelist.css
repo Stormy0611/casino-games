@@ -1,0 +1,11 @@
+.gamelist {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 20px;
+    width: 32px;
+}
+
+.gamelist div {
+    
+}

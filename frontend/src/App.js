@@ -1,15 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
-import Menu from './components/Menu';
-import Topbar from './components/Topbar';
+// Pages
+import HomePage from './pages/HomePage';
+// import Topbar from './components/Topbar';
+// import Menu from './components/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <Topbar />
-      <Menu />
-    </div>
+    <Router>
+        {/* <Topbar /> */}
+        {/* <Menu /> */}
+        <HomePage />
+      <main>
+        <Routes>
+          <Route exact path='/' component={HomePage} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
