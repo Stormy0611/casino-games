@@ -1,0 +1,9 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    top: 46px;
+    left: 65px;
+}

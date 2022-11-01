@@ -1,11 +1,30 @@
 .gamelist {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    margin-top: 70px;
     margin-left: 20px;
-    width: 32px;
+    /* width: 32px; */
+    z-index: 40;
 }
 
-.gamelist div {
-    
+.img-div {
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.img-div:hover {
+    background: #464C93;
+}
+
+.img-div:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.img-div:active {
+    background: linear-gradient(141.45deg, #5493FF 4.16%, #1045AB 95.15%);
+}
+
+.img-div:active img {
+    filter: brightness(0) invert(1);
 }
